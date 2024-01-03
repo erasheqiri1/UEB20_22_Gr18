@@ -123,4 +123,46 @@
     font-family: "Open Sans";
     font-weight: 600;
   }
-  
+  .row2 {
+    justify-content: space-around;
+    align-items: center;
+  }
+  .row2_text {
+    padding-top: 100px;
+    height: 200px;
+  }
+  .h1 {
+    font-family: "Rubik Maps";
+    font-size: 30px;
+    text-align: center;
+  }
+  .boxes {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .boxes2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 120px;
+    text-align: center;
+  }
+  .boxes h2,
+  .boxes2 h2 {
+    color: var(--black, #333);
+  }
+  .boxes p,
+  .boxes2 p {
+    color: var(--black, #333);
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .box11 {
+    height: 500px;
+    width: 400px;
+    border: 10px double #fa8b02;
+  }
+  .box11 img {
+    width: 400px;
+    height: 300px;
+  }
