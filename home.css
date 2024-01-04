@@ -166,3 +166,65 @@
     width: 400px;
     height: 300px;
   }
+  .row3 {
+    margin-top: 50px;
+    background-color: #f7f8fc;
+    height: 650px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .row3_box {
+    display: flex;
+  }
+  .row3_part1 {
+    width: 700px;
+  }
+  .row3_part1_h1 {
+    color: #333;
+    font-family: Open Sans;
+    font-size: 50px;
+  }
+  .row3_part1_p {
+    color: #333;
+    font-family: Open Sans;
+    font-size: 30px;
+    line-height: 32px;
+  }
+  .orangeButton {
+    width: 161px;
+    height: 56px;
+    background-color: #fa8b02;
+    border-radius: 10px;
+    box-shadow: 0px 20px 35px 0px rgba(166, 79, 13, 0.714);
+  }
+  
+  .row2_box {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .row3_part2 img {
+    width: 500px;
+    height: 300px;
+  }
+  .photo2 {
+    padding-left: 90px;
+    padding-top: 20px;
+  }
+  .box h1 {
+    color: var(--Orange, #fa8b02);
+    font-family: Open Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 100% */
+  }
