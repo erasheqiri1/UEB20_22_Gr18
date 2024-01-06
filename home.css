@@ -321,7 +321,7 @@
     height: 500px;
     background-color: #333;
   }
-  .row6_boxes{
+  .row6__boxes{
     padding: 10px;
     justify-content: space-around;
     display: flex;
