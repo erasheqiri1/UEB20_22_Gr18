@@ -302,13 +302,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   .row5_box img{
     width: 400px;
     height: 250px;
   }
-
+  .row5_box p{
+    text-align: center;
+    width: 60%;
+    color: #e8e8e8 ;
+    font-size: 20px;
+    line-height: 26px;
+  }
   
 
   .row6{
