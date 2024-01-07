@@ -70,3 +70,56 @@
     width: 500px;
     flex-direction: column;
 }
+.row2{
+    background-color: orange;
+    opacity: 0.9;
+    width:100%;
+    height: 355px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.row2_box{
+    display: inline-flex;
+    padding: 30px;
+    flex-direction: column;
+align-items: center;
+gap: 15px;
+border-radius: 24px;
+background: rgba(255,255,255,0.30);
+width: 290px;
+height: 200px;
+}
+.fa-award{
+    font-size: 100px;
+    color: orange;
+}
+h1{
+    text-align: center;
+    color: orange;
+}
+p{
+    text-align: center;
+}
+nav li{
+    float: left;
+}
+nav a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color: #ddd;
+    color:black;
+
+}
+.row3{
+    width: 100%;
+}
+.section_main{
+    display: flex;
+    height: 500px;
+}
