@@ -283,6 +283,7 @@
     background-color: #45a049;
   }
 
+
   .row5{
     height: 1000px;
     width: 100%;
@@ -300,27 +301,28 @@
     color: white;
     display: flex;
     flex-direction: column;
-    align-items:center ;
+    align-items: center;
+    text-align: center;
   }
 
   .row5_box img{
     width: 400px;
     height: 250px;
   }
-
-  .row_box{
+  .row5_box p{
     text-align: center;
     width: 60%;
     color: #e8e8e8 ;
     font-size: 20px;
     line-height: 26px;
   }
+  
 
   .row6{
     height: 500px;
     background-color: #333;
   }
-  .row6_boxes{
+  .row6__boxes{
     padding: 10px;
     justify-content: space-around;
     display: flex;
@@ -341,7 +343,7 @@
     font-size: 25px;
     font-weight: 100;
   }
-  .row_logos a{
+  .row6_logos a{
     text-decoration: none;
     padding: 10px;
   }
