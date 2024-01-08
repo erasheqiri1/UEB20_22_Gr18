@@ -24,3 +24,82 @@
     text-decoration: none;
     color: #333;
 }
+#fort{
+    display: flex;
+    width: 100%;
+    height: 800px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: orange;
+    width: 100%;
+    display: flex;
+}
+.info{
+    width: 800px;
+    flex-direction: column;
+    color: var(--black,#333);
+}
+.info call{
+    display: inline-flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 40px;
+}
+.info h1{
+    color: var(--black,#333);
+    font-family: Open Sans;
+    font-size: 55px;
+    font-weight: 800;
+}
+p{
+    color: var(--black,#333);
+font-size: 35px;
+font-weight: 600;
+}
+h2{
+    color: var(--black,#333);
+font-family: Open Sana;
+font-size: 25px;
+font-weight: 600;
+line-height: 26px;
+}
+.forma 
+{
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    gap: 30px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    background-color: bisque;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(13 13 13);
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: orange; 
+}
