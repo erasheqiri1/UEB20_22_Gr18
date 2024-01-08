@@ -70,6 +70,14 @@ table.multicol th {
   background-color: orange;
   border: 2px solid orange;
 }
+table.spacing {
+  border-collapse: collapse;
+  border-spacing: 15px;
+}
+table.padding {
+  border-collapse: collapse;
+  width: 100%;
+}
 
 
 
