@@ -1,2 +1,2 @@
 # UEB20_22_Gr18
-my first repositroy
+Krijimi i një ueb sajti në kuadër të projektit (HTML5, CSS, CSS3, Bootstrap, JavaScript dhe JQuery)
