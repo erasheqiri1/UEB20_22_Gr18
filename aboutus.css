@@ -104,6 +104,15 @@ p{
 nav li{
     float: left;
 }
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #444;
+    overflow: hidden;
+    justify-content: space-around;
+    display: flex;
+}
 nav a{
     display: block;
     color: white;
