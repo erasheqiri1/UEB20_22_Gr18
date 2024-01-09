@@ -94,6 +94,20 @@ form #checkbox {
     font-size: 1.15rem;
     margin: 2rem 0;
 }
+#checkbox input{
+    width: 20px;
+    height: 20px;
+    border-radius: 1rem;
+    margin-left: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    accent-color: var(--accent);
+}
+#checkbox a:hover{
+    text-decoration: underline;
+}
+
 .row6 {
     height: 500px;
     background-color: #333;
