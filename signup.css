@@ -47,6 +47,26 @@ form{
     align-items: center;
     gap: 20px;
 }
+.user-type label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-secondary);
+    font-size: 1.15rem;
+}
+.user-type label input {
+    width: 20px;
+    height: 20px; 
+}
+form .input{
+    padding: 1.25rem 1.5rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--foreground);
+    font-size: 1.25rem;
+    width: 100%;
+    color: var(--text-primary);
+}
 .row6 {
     height: 500px;
     background-color: #333;
