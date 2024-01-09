@@ -67,6 +67,33 @@ form .input{
     width: 100%;
     color: var(--text-primary);
 }
+.password {
+    width: 100%;
+    display: flex;
+    border-radius: 1rem;
+
+}
+.password input{
+    border-radius: 1rem 0 0 1rem;
+}
+.toggle-visibility{
+    background-color: var(--foreground);
+    border: none;
+    padding: 22px 20px;
+    border-radius: 0 1rem 1rem 0;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--text-secondary);
+}
+form #checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    color: var(--text-secondary);
+    font-size: 1.15rem;
+    margin: 2rem 0;
+}
 .row6 {
     height: 500px;
     background-color: #333;
