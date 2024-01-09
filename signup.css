@@ -84,6 +84,10 @@ form .input{
     cursor: pointer;
     font-size: 18px;
     color: var(--text-secondary);
+
+}
+form .input:focus{
+    outline: none;
 }
 form #checkbox {
     display: flex;
@@ -103,6 +107,10 @@ form #checkbox {
     border: none;
     outline: none;
     accent-color: var(--accent);
+}
+#checkbox a {
+    text-decoration: none;
+    color: var(--accent);
 }
 #checkbox a:hover{
     text-decoration: underline;
