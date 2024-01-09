@@ -115,6 +115,12 @@ form #checkbox {
     width: 100%;
     background-color: var(--accent);
     font-weight: 600;
+    cursor: pointer;
+    transition: 300ms;
+    color: var(--background);
+}
+#button:hover {
+    transform: translateY(-5px);
 }
 .row6 {
     height: 500px;
@@ -142,14 +148,8 @@ form #checkbox {
     color: var(--white, #fff);
     font-family: Open Sans;
     font-size: 25px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 300ms;
-    color: var(--background);
+    font-weight: 100;
 
-  }
-  #button:hover{
-    transform: translateY(-5px);
   }
   .row6_logos a {
     text-decoration: none;
