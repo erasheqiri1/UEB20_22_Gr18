@@ -30,7 +30,23 @@
     color: var(--text-secondary);
     font-size: 1.25rem;
 }
-
+.headers a{
+    text-decoration: none;
+    color: var(--accent);
+}
+.headers a:hover {
+    text-decoration: underline;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.user-type{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 .row6 {
     height: 500px;
     background-color: #333;
