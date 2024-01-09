@@ -1,0 +1,173 @@
+.nav{
+    display: flex;
+    gap:48px;
+}
+
+@font-face{
+    font-family: "Open Sans";
+    src:url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap")
+    format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+.nav a{
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.navbar{
+    padding: 0 4rem;
+    background-color: #333;
+}
+
+.navbar-content{
+display: flex;
+flex-flow: row nowrap;
+justify-content: space-between;
+align-items: center;
+padding: 2rem 0;
+border-bottom: 1px solid var(--text--secondary);
+}
+
+.nav-light{
+    background-color: var(--foreground);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.navbar-light, .navbar-content{
+    border: none;
+}
+
+.navbar .navbar-logo img {
+    width: 30px;
+    height: 30px;
+}
+
+.navbar .middle a{
+    margin-left: 50px;
+}
+
+a.link{
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: 300ms;
+}
+
+a.link:hover{
+    color: var(--accent);
+
+}
+
+.navbar-content .right #login:hover{
+    background-color: var(--accent);
+    color: #fff;
+    border: 1px solid var(--accent);
+}
+
+.navbar-logged .right{
+    cursor: pointer;
+}
+
+.navbar-content #burger-menu{
+    font-size: 24px;
+    transition: 300ms;
+    opacity: 0.5;
+    cursor: pointer;
+    display: none;
+    color: var(--text-primary);
+}
+.navbar-content #burger-menu:hover {
+    opacity: 1;
+}
+
+.navbar .dropdown{
+    background-color: var(--foreground);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    width: 250px;
+    padding: 1rem o;
+    gap: 15px;
+    position: absolute;
+    right: 4rem;
+    top: 85px;
+    display: none;
+}
+
+.dropdown.top{
+    padding: 0 1.5rem;
+    margin-bottom: 15px;
+}
+
+.navbar .dropdown hr{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--border);
+}
+
+.navbar .dropdown .options .option{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:15px;
+    padding: 10px 1.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+.dropdown .option:visited{
+    color: var(--text-primary);
+}
+
+.navbar .dropdown .option .option:hover {
+    background-color: var(--accent);
+}
+
+.row6 {
+    height: 500px;
+    background-color: #333;
+  }
+  .row6__boxes {
+    padding: 10px;
+    justify-content: space-around;
+    display: flex;
+  }
+  
+  .box12 {
+    display: inline-flex;
+  
+    flex-direction: column;
+  
+    margin-top: 25px;
+  }
+  .box12 h1 {
+    color: var(--white, #fff);
+    font-family: Open Sans;
+    font-size: 25px;
+  }
+  .box12 h2 {
+    color: var(--white, #fff);
+    font-family: Open Sans;
+    font-size: 25px;
+    font-weight: 100;
+  }
+  
+  .row6_logos a {
+    text-decoration: none;
+    padding: 10px;
+  }
+  .fa-facebook,
+  .fa-instagram,
+  .fa-twitter,
+  .fa-pinterest {
+    color: orange;
+  }
+  .text12 {
+    text-align: center;
+    color: var(--white, #fff);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+  }
