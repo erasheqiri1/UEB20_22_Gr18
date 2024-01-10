@@ -17,6 +17,7 @@
     justify-content: space-around;
     align-items: center;
   }
+
   .nav {
     display: flex;
     gap: 48px;
@@ -31,7 +32,7 @@
 
  
 
-.navbar-content .right #login {
+.header .right #login {
 
     padding: 8px 20px;
 
@@ -45,7 +46,7 @@
 
  
 
-.navbar-content .right #login:hover {
+.header .right #login:hover {
 
     background-color: var(--accent);
 
@@ -419,3 +420,53 @@
     font-size: 16px;
     font-weight: 400;
   }
+
+  a.link {
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: 300ms;
+    font-size: 25px;
+  }
+  
+  a.link:hover {
+    color: var(--accent);
+  }
+  
+  .navbar-logged .navbar-content .right .name {
+    display: none;
+    margin-top: 10px;
+  }
+  
+  .navbar-content .right #login {
+    padding: 8px 20px;
+    border: 1px solid var(--text-primary);
+    border-radius: 8px;
+    margin-left: 1rem;
+  }
+  
+  .navbar-content .right #login:hover {
+    background-color: var(--accent);
+    color: #fff;
+    border: 1px solid var(--accent);
+  }
+  
+  .navbar-logged .right {
+    cursor: pointer;
+  }
+  
+  .navbar-content #burger-menu {
+    font-size: 24px;
+    transition: 300ms;
+    opacity: 0.5;
+    cursor: pointer;	
+    display: none;
+    color: var(--text-primary);
+  }
+  :root {
+    --background: #222222;
+    --foreground: #333333;
+    --accent: orange;
+    --text-primary: #ffffff;
+    --text-secondary: #ffffff7f;
+    --border: #555555;
+}
