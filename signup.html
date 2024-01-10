@@ -80,7 +80,7 @@
                 &<a href="assets/extra/PRIVACY_POLICY.pdf">Privacy Policy </a>
             </p>
         </div>
-        <input type="submit" name="submit" id="button" class="btn" onclick="playClickSound() form=yourFormId">ficfixe
+        <input type="submit" name="submit" id="button" class="btn" onclick="playClickSound()">
         </form>
     </div>
     </div>
@@ -134,14 +134,10 @@
     <script>
         function playClickSound() {
             var audio = document.getElementById("clickSound");
-            var form = document.getElementById("yourFormId"); 
-    
-
-            if (form.checkValidity()) {
-                audio.play();
-            }
+            audio.play();
         }
     </script>
+    
     
 </body>
 
