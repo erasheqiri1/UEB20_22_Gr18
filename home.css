@@ -432,36 +432,7 @@
     color: var(--accent);
   }
   
-  .navbar-logged .navbar-content .right .name {
-    display: none;
-    margin-top: 10px;
-  }
-  
-  .navbar-content .right #login {
-    padding: 8px 20px;
-    border: 1px solid var(--text-primary);
-    border-radius: 8px;
-    margin-left: 1rem;
-  }
-  
-  .navbar-content .right #login:hover {
-    background-color: var(--accent);
-    color: #fff;
-    border: 1px solid var(--accent);
-  }
-  
-  .navbar-logged .right {
-    cursor: pointer;
-  }
-  
-  .navbar-content #burger-menu {
-    font-size: 24px;
-    transition: 300ms;
-    opacity: 0.5;
-    cursor: pointer;	
-    display: none;
-    color: var(--text-primary);
-  }
+ 
   :root {
     --background: #222222;
     --foreground: #333333;
