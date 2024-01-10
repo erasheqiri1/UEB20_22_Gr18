@@ -21,6 +21,22 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+:root {
+  --background: #f9f9f9;
+  --foreground: #ffffff;
+  --accent: orange;
+  --text-primary: #222222;
+  --text-secondary: #2222227f;
+  --border: #dbdbdb;
+}
+:root {
+  --background: #222222;
+  --foreground: #333333;
+  --accent: orange;
+  --text-primary: #ffffff;
+  --text-secondary: #ffffff7f;
+  --border: #555555;
+}
 
 .nav {
   display: flex;
