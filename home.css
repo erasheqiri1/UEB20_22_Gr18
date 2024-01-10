@@ -21,7 +21,65 @@
     display: flex;
     gap: 48px;
   }
-  
+  .navbar-logged .navbar-content .right .name {
+
+    display: none;
+
+    margin-top: 10px;
+
+}
+
+ 
+
+.navbar-content .right #login {
+
+    padding: 8px 20px;
+
+    border: 1px solid var(--text-primary);
+
+    border-radius: 8px;
+
+    margin-left: 1rem;
+
+}
+
+ 
+
+.navbar-content .right #login:hover {
+
+    background-color: var(--accent);
+
+    color: #fff;
+
+    border: 1px solid var(--accent);
+
+}
+
+ 
+
+.navbar-logged .right {
+
+    cursor: pointer;
+
+}
+
+ 
+
+.navbar-content #burger-menu {
+
+    font-size: 24px;
+
+    transition: 300ms;
+
+    opacity: 0.5;
+
+    cursor: pointer;    
+
+    display: none;
+
+    color: var(--text-primary);
+
+}
   @font-face {
     font-family: "Open Sans";
     src: url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap")
