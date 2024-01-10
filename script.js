@@ -68,3 +68,5 @@ function validateCheckbox(name) {
             return true;
         }
     }
+   return false;
+}
