@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+    <audio id="clickSound">
+        <source src="sound1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
@@ -15,22 +19,20 @@
 <body>
     <nav class="navbar">
         <div class="navbar-content">
-        <div class="logo">
-            <img src="" alt="foto1">
-        </div>
-        <div class="nav">
-            <a href="./travel.html"> Home </a>
-            <a href="./aboutud.html">About us</a>
-            <a href="./tour.html">Tour Packages</a>
-            <a href="./kontakt.html">Contact us</a>
-        </div>
-        <div class="right">
-            <a href="signup.html" class="link">Sign Up</a>
-            <a href="login.html" class="link" id="login"> Log In </a>
+            <div class="logo">
+                <img src="" alt="foto1">
+            </div>
+            <div class="nav">
+                <a href="./travel.html"> Home </a>
+                <a href="./aboutus.html">About us</a>
+                <a href="./tour.html">Tour Packages</a>
+                <a href="./contact.html">Contact us</a>
+            </div>
+            <div class="right">
+                <a href="signup.html" class="link">Sign Up</a>
+                <a href="login.html" class="link" id="login"> Log In </a>
+            </div>
 
-        </div>
-        <i class="fa-solid fa-bars-staggered" id="burger-menu"></i>
-        </div>
     </nav>
     <!--mbaron nav-->
     <div class="main">
@@ -47,7 +49,7 @@
                         <input type="radio" name="user_type" value="INDIVIDUAL"> Individual
                     </label>
                     <label>
-                        <input type="radio" name="user-type" value="BUSINESS"> Business
+                        <input type="radio" name="user-type" value="GROUP"> Group
                     </label>
                 </div>
 
@@ -69,14 +71,14 @@
                         class="input" id="passwordInput2">
                     <i class="fa-solid fa-eye-slash toggle-visibility" id="toggle-visibility-2"></i>
                 </div>
-        <div id="checkbox">
-            <input type="checkbox" name="checkbox " id="check">
-            <p>
-                I agree to the <a href="assets/extra/TERMS_AND_CONDITIONS.pdf"> Terms of Use </a>
-                &<a href="assets/extra/PRIVACY_POLICY.pdf">Privacy Policy </a>
-            </p>
-        </div>
-        <input type="submit" name="submit" id="button" class="btn">
+                <div id="checkbox">
+                    <input type="checkbox" name="checkbox " id="check">
+                    <p>
+                        I agree to the <a href="assets/extra/TERMS_AND_CONDITIONS.pdf"> Terms of Use </a>
+                        &<a href="assets/extra/PRIVACY_POLICY.pdf">Privacy Policy </a>
+                    </p>
+                </div>
+        <input type="submit" name="submit" id="button" class="btn" onclick="playClickSound()">
         </form>
     </div>
     </div>
@@ -89,10 +91,10 @@
         <div class="row6__boxes">
             <div class="box12">
                 <h1>Sherbimet</h1>
-                <h2>fhkjdjk</h2>
-                <h2>hjsdk</h2>
-                <h2>fhhfjf</h2>
-                <h2>jdkfjfj</h2>
+                <h2>Udhetime</h2>
+                <h2>Hotele</h2>
+                <h2>Fluturimet</h2>
+                <h2>Bileta</h2>
             </div>
             <div class="box12">
                 <h1> Home </h1>
@@ -127,6 +129,53 @@
             <h1> Copyright © 2023. All rights reserved.</h1>
         </div>
     </div>
+    <script>
+        function playClickSound() {
+            var audio = document.getElementById("clickSound");
+            audio.play();
+        }
+    
+    $(document).ready(function () {
+        // Hide and Show
+        $('#login').click(function () {
+            $('.login-form').toggle();
+        });
+
+        // Fade
+        $('#login').mouseenter(function () {
+            $('.login-form').fadeIn(500);
+        });
+
+        $('#login').mouseleave(function () {
+            $('.login-form').fadeOut(500);
+        });
+
+        // Slide
+        $('#login').click(function () {
+            $('.login-form').slideToggle(500);
+        });
+
+        // Animate
+        $('#login').click(function () {
+            $('.login-form').animate({ opacity: 'toggle', height: 'toggle' }, 500);
+        });
+
+
+
+
+        
+        // Callback
+        $('#button').click(function () {
+            playClickSound();
+            $('.main .content').slideUp(1000, function () {
+                alert('Form submitted successfully!');
+            });
+        });
+    });
+
+    </script>
+    
+    
 </body>
 
 </html>

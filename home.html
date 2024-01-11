@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +19,10 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 </head>
+
 <body>
     <div class="container">
         <!--fillon row1-->
@@ -27,15 +31,22 @@
 
             <div class="header">
                 <div class="logo">
-                    <img src="" alt="foto1">
+                    <img src="./038_Traveling__1_-removebg-preview.png" alt="foto1" id="logo1">
                 </div>
                 <div class="nav">
-                    <a href="./travel.html">Home</a>
-                    <a href="./aboutud.html">About us</a>
-                    <a href="./tour.html">Tour Packages</a>
-                    <a href="./kontakt.html">Contact us</a>
+                    <a href="./home.html" id="jump">Home</a>
+                    <a href="./aboutus.html" id="jump">About us</a>
+                    <a href="./tour.html" id="jump">Tour Packages</a>
+                    <a href="./contact.html" id="jump">Contact us</a>
+                </div>
+                <div class="right">
+                    <a href="signup.html" class="link">Sign Up</a>
+                    <a href="login.html" class="link" id="login"> Log In </a>
                 </div>
             </div>
+
+
+
 
             <div class="main">
                 <div class="box1">
@@ -136,7 +147,7 @@
                         <h2> Amsterdam </h2>
                         <h3> Prej 45 EURO </h3>
 
-                        <p> Një tapiceri magjepsëse kanalesh, kulture dhe sharmi </p>
+                        <p> Një mbështjellje magjepsëse kanalesh, kulture dhe sharmi </p>
                     </div>
                     <div class="box11">
                         <img src="./rome.jpg">
@@ -151,7 +162,7 @@
                 <div class="boxes2">
                     <div class="box11">
                         <img src="./shutterstock_425660383.jpg">
-                        <h2> Londër  </h2>
+                        <h2> Londër </h2>
                         <h3> Prej 100 EURO </h3>
 
                         <p> Një vazo madhështore shkrirjeje e historisë,
@@ -162,7 +173,7 @@
                         <h2> Spanja </h2>
                         <h3> Prej 200 EURO </h3>
 
-                        <p> Një tapiceri pasioni, diversiteti dhe sharmi i pafund </p>
+                        <p> Një pasion për mbështjellje, diversitet dhe sharm i pafund. </p>
 
                     </div>
                     <div class="box11">
@@ -177,21 +188,26 @@
                         <h2> Belgjika </h2>
                         <h3> Prej 60 EURO </h3>
 
-                        <p> Një tapiceri e trashëgimisë, kënaqësive të kuzhinës dhe sharmeve të quaint. </p>
+                        <p>
+                            Një mbështjellje e trashëgimisë, kënaqësive të kuzhinës dhe sharmeve të tradicionales. </p>
                     </div>
 
                 </div>
             </div>
             <!--perfundon row2-->
-            
+
             <!--fillon row3-->
             <div class="row3">
 
                 <div class="row3_part1">
-                    <h1 class="row3_part1_h1"> Ne jemi kompania për udhëtim që ju po e kerkoni! </h1>
-                    <p class="row3_part1_p"> Ne jemi ofruesi më i madh i shërbimit të festave në botë me
+                    <h1 class="row3_part1_h1"><abbr title="E-traveling">E-T:</abbr> Ne jemi kompania për udhëtim që ju po e kerkoni! </h1>
+                    <p class="row3_part1_p"> Ne jemi <u> ofruesi më i madh</u> i shërbimit të festave në botë me
                         partnerë dhe vende të shpërndara në të gjithë botën
-                        duke prioritizuar shërbimin dhe kënaqësinë e klientit. </p>
+                        duke prioritizuar shërbimin dhe kënaqësinë e klientit.
+                        <a href="https://www.nh-hotels.com/en/hotels/amsterdam?ca
+                        mpid=8435708&gclid=6141695b7c5d1d58ea220cc7682fa3bf&gclsrc=3p.ds&msclkid=6141695b7c5d1d58ea220cc7682fa3bf" 
+                        target="_blank">Vizito hotelet ne dispozicion.</a><br> Shkarkoni file: 
+                        <a href="C:\Users\NB\Desktop\era github\UEB20_22_Gr18" download="emri-i-fajllit.txt">Shkarko këtu</a></p>
                     <button class="orangeButton"> Mëso më shumë! </button>
                     <div class="row3_box">
                         <div class="box">
@@ -203,12 +219,12 @@
                             <h2> Konstumatorë të kënaqur! </h2>
                         </div>
                         <div class="box">
-                            <h1> 9.2 </h1>
-                            <h2> Review prej DBRS Morningstar visitors! </h2>
+                            <h1> 10+</h1>
+                            <h2>Zgjidhje te sherbimit </h2>
                         </div>
                         <div class="box">
-                            <h1> 9.8 </h1>
-                            <h2> "Egan-Jones Ratings" accomplished. </h2>
+                            <h1> 20+ </h1>
+                            <h2>Guida profesionale</h2>
                         </div>
                     </div>
                 </div>
@@ -230,7 +246,7 @@
                 </div>
 
                 <div class="row4__rightSide">
-                 
+
                     <form action="/submit_form" method="post">
                         <label for="name">Emri:</label>
                         <input type="text" id="name" name="name" required>
@@ -244,87 +260,105 @@
                         <label for="number">Numri telefonit:</label>
                         <input type="tel" id="number" name="number" required>
 
-                        <button type="submit">Submit</button>
+                        <button type="submit" class="submit">Submit</button>
                     </form>
                 </div>
 
             </div>
-           
-          <!--fillon row5-->    
-          <div class="row5">
-            <div class ="row5_box">
-                <img src="./por1.jpg">
-                <hi><b> Dua Lipa </b></hi>
-                <p> Kohët e fundit pata kënaqësinë të rezervoja pushime permes E-traveling,
-                    dhe jam e emocionuar të ndaj përvojen time të jashtëzakonshme me këtë agjenci udhëtimi. Nga 
-                    fillimi deri në fund, Horizon Adventures tregoi profesionalizëm të pashoq, vëmendje ndaj detajeve dhe 
-                    një angazhim të vërtetë për të siguruar një përvojë të paharrueshme udhëtimi.
-                </p>
+
+            <!--fillon row5-->
+            <div class="row5">
+                <div class="row5_box">
+                    <img src="./por2.jpg">
+                    <h1><b><mark> Dua Lipa</mark> </b></h1>
+                    <p> <i>Kohët e fundit pata kënaqësinë të rezervoja pushime permes E-traveling,
+                        dhe jam e emocionuar të ndaj përvojen time të jashtëzakonshme me këtë agjenci udhëtimi. Nga
+                        fillimi deri në fund, Horizon Adventures tregoi profesionalizëm të pashoq, vëmendje ndaj
+                        detajeve dhe
+                        një angazhim të vërtetë për të siguruar një përvojë të paharrueshme udhëtimi.
+                   </i> </p>
+                </div>
+                <div class="row5_box">
+                    <img src="./por1.jpg">
+                    <h1> <b><mark>Drin Istrefi </mark></b></h1>
+                    <p> <i>Nisja e një aventure të kohëve të fundit me E-traveling më la një mexhlis kujtimesh dhe një
+                        çantë të perzier përshtypjesh. Në përgjithësi,
+                        pervoja ime me ketë agjenci udhëtimi ishte pozitive, e shënuar nga disa momente të veçanta dhe
+                        disa fusha që mund të perdorin rafinimin. </i></p>
+                </div>
             </div>
-            <div class="row5_box">
-                <img src="./por2.jpg">
-                <h1> Drin Istrefi </h1>
-                <p> Nisja e një aventure të kohëve të fundit me E-traveling më la një mexhlis kujtimesh dhe një çantë të perzier përshtypjesh. Në përgjitshësi, 
-                    pervoja ime me ketë agjenci udhëtimi ishte pozitive, e shënuar nga disa momente të veçanta dhe disa fusha që mund të perdorin rafinimin. </p>
-            </div>
-          </div>
-          <!--perfundon row5 -->
+            <!--perfundon row5 -->
 
-          <!--fillon row6-->
-          <div class="row6">
-            <div class="row6_logo">
-                <img src=""alt="logo">
-        
-            </div>
-            <hr>
-            <div class="row6__boxes">
-                <div class="box12">
-                    <h1> Shërbimet </h1>
-                    <h2> Udhetime </h2>
-                    <h2> Hotele </h2>
-                    <h2> Fluturimet </h2>
-                    <h2> Bileta </h2>
-                </div>
-
-                <div class="box12">
-                    <h1> Home </h1>
-                    <h2> About Us </h2>
-                    <h1> Tour package </h1>
-                    <h2> Contact Us </h2>
-                </div>
-
-                <div class="box12">
-                    <h1> Help </h1>
-                    <h2> Terms of Use </h2>
-                    <h2> Privacy Policy </h2>
-                </div>
-                <div class="box12">
-                    <h1> Kontaktet </h1>
-                    <h2> Prishtinë </h2>
-                    <h2> traveling@gmail.com </h2>
-                    <h2> +38349789564 </h2>
+            <!--fillon row6-->
+            <div class="row6">
+                <div class="row6_logo">
+                    <img src="./038_Traveling__1_-removebg-preview.png" alt="logo">
 
                 </div>
-                <div class="box12">
-                    <h1> Rrjete Sociale </h1>
-                    <div class="row6_logo">
-                        <a href="" class="fa fa-facebook"></a>
-                        <a href="" class="fa fa-instagram"></a>
-                        <a href="" class="fa fa-twitter"></a>
-                        <a href="" class="fa fa-pinterest"></a>
+                <hr>
+                <div class="row6__boxes">
+                    <div class="box12">
+                        <h1> Shërbimet </h1>
+                        <h2> Udhetime </h2>
+                        <h2> Hotele </h2>
+                        <h2> Fluturimet </h2>
+                        <h2> Bileta </h2>
                     </div>
+
+                    <div class="box12">
+                        <h1><a href="#jump">Home</a></h1>
+                        <h2><a href="#jump"> About Us </a></h2>
+                        <h2><a href="#jump"> Tour package </a></h2>
+                        <h2><a href="#jump">Contact Us </a> </h2>
+                    </div>
+
+                    <div class="box12">
+                        <h1> Help </h1>
+                        <h2> Terms of Use </h2>
+                        <h2> Privacy Policy </h2>
+                    </div>
+                    <div class="box12">
+                        <h1> Kontaktet </h1>
+                        <address>
+                        <h2> Prishtinë </h2>
+                        <h2> traveling@gmail.com </h2>
+                        <h2> +38349789564 </h2>
+                    </address>
+
+                    </div>
+                    <div class="box12">
+                        <h1> Rrjete Sociale </h1>
+                        <div class="row6_logo">
+                            <a href="" class="fa fa-facebook"></a>
+                            <a href="" class="fa fa-instagram"></a>
+                            <a href="" class="fa fa-twitter"></a>
+                            <a href="" class="fa fa-pinterest"></a>
+                        </div>
+                    </div>
+
                 </div>
 
+                <hr>
+                <div class="text12">
+                    <h1> Copyright © 2024. All rights reserved. </h1>
+                </div>
             </div>
 
-            <hr>
-            <div class="text12">
-                <h1> Copyright © 2024. All rights reserved. </h1>
-            </div>
-          </div>
+            <!--perfundon row6-->
+        </div>
+        <script>
+            /*per animate*/
+            $(document).ready(function(){
+  $(".submit").click(function(){
+    var div = $(".submit");
+    div.animate({height: '200px', opacity: '0.4'}, "slow");
+    div.animate({width: '200px', opacity: '0.8'}, "slow");
+    div.animate({height: '100px', opacity: '0.4'}, "slow");
+    div.animate({width: '100px', opacity: '0.8'}, "slow");
+  });
+});
+        </script>
 
-          <!--perfundon row6-->
-          </div>
-           
 </body>
-</html>      
+
+</html>

@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="./aboutus.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"  rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha384-lKuwXtf3O1ZZPsjDGK+frhW1oaP/lC5bqA1RvAqT3o9doox4/dWq1qIvG7sDAIXG" crossorigin="anonymous">
-
+<!--LINKU PER JQUERY-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -24,36 +25,49 @@
         <div class="row1">
             <div class="header">
                 <div class="logo">
-                    <img src="" alt="foto1">
+                    <img src="./038_Traveling__1_-removebg-preview.png" alt="foto1">
                 </div>
                 <div class="nav">
                     <a href="./tavel.html">Home</a>
                     <a href="./aboutus.html">About us</a>
                     <a href="./tour.html">Tour Packages</a>
-                    <a href="./kontakt.html">Contact us</a>
+                    <a href="./contact.html">Contact us</a>
+                </div>
+                <div class="right">
+                    <a href="signup.html" class="link">Sign Up</a>
+                    <a href="login.html" class="link" id="login"> Log In </a>
                 </div>
             </div>
             <div class="main">
                 <div class="main_box">
-                    <h2>E-travelling kujdeset per ju!</h2>
+                    <h2 id="main_h1">E-travelling kujdeset per ju!</h2>
                     <p>Ne besojmë se udhëtimi nuk ka të bëjë vetëm me arritjen e një destinacioni;
                         Bëhet fjalë për një udhëtimi që pasuron jetën tuaj me përvoja, kultura dhe kujtime të reja.
-                        Ne jemi të apasionuar pas kurimit të aventurave të jashtëzakonshme të udhëtimit që shkojnë
-                        pertej të zakonshme,
+                        Ne jemi të apasionuar pas kurimit të aventurave të jashtëzakonshme të <mark>udhëtimit që shkojnë
+                        pertej të zakonshmes</mark>,
                         duke krijuar momente që zgjasin një jetë të tërë </p>
-                    <button>Learn more</button>
+                        <div class="buttons">
+                    <button id="show">Shiko me shumë</button>
+                    <button id="hide">Shiko me pak</button>
+                    </div>
                 </div>
             </div>
         </div>
         <!--perfundon row1-->
             <div class="row2">
                 <div class="row2_box">
-                   
+                    <video id="video1" width="320" height="240" controls>
+                        <source src="video1.mp4" type="video/mp4">
+                </video>
                 </div>
                 <div class="row2_box">
+                    <video id="video2" width="320" height="240" controls>
+                        <source src="video2.mp4" type="video/mp4">
                 <i class="fa fa-clock"> </i>
                 </div>
                 <div class="row2_box">
+                    <video id="video3" width="320" height="240" controls>
+                        <source src="video3.mp4" type="video/mp4">
                     <i class=""></i>
                 </div>
             </div>
@@ -61,7 +75,7 @@
         <div class="row3">
             <nav>
                 <h1> Guidat tona profesionale</h1>
-                <p> Me vite përvojë udhërrëfyesi ynë është i aftë të japë komente mendjehollëse dhe
+                <p id="row3_p"> Me vite përvojë udhërrëfyesi ynë është i aftë të japë komente mendjehollëse dhe
                     ta bëjë udhëtimin tuaj interesant dhe tërheqës. Nga historia dhe kultura e destinacioneve
                     që vizitoni në zakonet dhe traditat lokale,
                     udhërrëfyesi ynë do t'ju japë një mori informacionesh për të pasuruar udhëtimet tuaja.</p>
@@ -73,8 +87,10 @@
             </nav>
             <div class="section_main">
                 <section id="mission">
-                    <p>Ne jemi të përkushtuar për të ofruar përvoja të paharrueshme udhëtimi për klientët tanë.
-                        Misioni ynë është të...
+                    <h2> 
+                        Misioni jonë
+                    </h2>
+                    <p>Ne jemi të përkushtuar për të ofruar përvoja të paharrueshme udhëtimi për klientët tanë. Misioni ynë është të...
                     </p>
                     <ul>
                         <li> Ofrojmë shërbim të jashtëzakonshëm ndaj klientit </li>
@@ -127,17 +143,17 @@
             <!--perfundon row3-->
 <div class="row4">
     <div class="row4__logo">
-        <img src="" alt="logo">
+        <img src="./038_Traveling__1_-removebg-preview.png" alt="logo">
 
     </div>
     <hr>
     <div class="row4__boxes">
         <div class="box12">
             <h1>Sherbimet</h1>
-            <h2>fhkjdjk</h2>
-            <h2>hjsdk</h2>
-            <h2>fhhfjf</h2>
-            <h2>jdkfjfj</h2>
+            <h2>Udhetime</h2>
+            <h2>Hotele</h2>
+            <h2>Fluturimet</h2>
+            <h2>Bileta</h2>
         </div>
         <div class="box12">
             <h1> Home </h1>
@@ -167,14 +183,40 @@
         </div>
     </div>
     <hr>
-    <div class="text12">
-        <h1>Copyright © 2023. All rights reserved.</h1>
-    </div>
+   
 
 </div>
     </div>
 
-        
+        <script>
+            /*per mouseenter, on*/
+$(document).ready(function(){
+  $("#main_h1").mouseenter(function(){
+    alert("E-travelling kujdeset per ju!");
+  });
+});
+$("#row3_p").on({
+  mouseenter: function(){
+    $(this).css("background-color", "lightgray");
+  },
+  mouseleave: function(){
+    $(this).css("background-color", "lightblue");
+  },
+  click: function(){
+    $(this).css("background-color", "orange");
+  }
+});
+/*per hide dhe show*/
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
+
+        </script>
 </body>
 
 </html>
