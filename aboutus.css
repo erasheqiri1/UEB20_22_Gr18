@@ -51,20 +51,7 @@
   
     border: 1px solid var(--accent);
   }
-  
-  .navbar-content #burger-menu {
-    font-size: 24px;
-  
-    transition: 300ms;
-  
-    opacity: 0.5;
-  
-    cursor: pointer;
-  
-    display: none;
-  
-    color: var(--text-primary);
-  }
+
 a.link {
     text-decoration: none;
     color: var(--text-primary);
