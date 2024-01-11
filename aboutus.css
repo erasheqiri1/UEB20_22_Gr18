@@ -101,7 +101,12 @@ mark{
     background-color: orange;
     color: white;
 }
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
 .main button{
+    margin-left: 10px;
     border-radius: 50px;
     border: 1.5px solid #FFF;
     display: flex;
