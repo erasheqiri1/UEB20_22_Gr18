@@ -10,6 +10,10 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.logo img{
+    width: 160px;
+    height: 160px;
+  }
 .header{
     height: 15%;
     opacity: 0.8;
@@ -22,6 +26,55 @@
     display: flex;
     gap:48px;
 }
+:root {
+    --background: #222222;
+    --foreground: #333333;
+    --accent: orange;
+    --text-primary: #ffffff;
+    --text-secondary: #ffffff7f;
+    --border: #555555;
+  }
+  .header .right #login {
+    padding: 8px 20px;
+  
+    border: 1px solid var(--text-primary);
+  
+    border-radius: 8px;
+  
+    margin-left: 1rem;
+  }
+  
+  .header .right #login:hover {
+    background-color: var(--accent);
+  
+    color: #fff;
+  
+    border: 1px solid var(--accent);
+  }
+  
+  .navbar-content #burger-menu {
+    font-size: 24px;
+  
+    transition: 300ms;
+  
+    opacity: 0.5;
+  
+    cursor: pointer;
+  
+    display: none;
+  
+    color: var(--text-primary);
+  }
+a.link {
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: 300ms;
+    font-size: 25px;
+  }
+  
+  a.link:hover {
+    color: var(--accent);
+  }
 @font-face{
     font-family:"Open Sans";
     src: url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap")
@@ -43,6 +96,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+mark{
+    background-color: orange;
+    color: white;
 }
 .main button{
     border-radius: 50px;
@@ -206,3 +263,13 @@ footer{
     font-size: 16px;
     font-weight: 400;
 }
+.row4__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .row4__logo img{
+    width: 40px;
+    display: flex;
+  
+  }
