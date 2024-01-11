@@ -24,7 +24,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -159,8 +159,8 @@
 <!--perfundojne-->
 <!--fillon row3-->
     <div class="row3">
-        <h1 class> Guidat tona Profesionale</h1>
-        <p>Me vite përvojë, udhërrëfyesi ynë është i aftë të japë komente mendjehollëse dhe ta bëjë udhëtimin tuaj
+        <h1 class="row3_h1"> Guidat tona Profesionale</h1>
+        <p class="row3_p">Me vite përvojë, udhërrëfyesi ynë është i aftë të japë komente mendjehollëse dhe ta bëjë udhëtimin tuaj
             interesant dhe tërheqës. Nga historia dhe kultura e destinacioneve që vizitoni në zakonet dhe traditat
             lokale, udhërrëfyesi ynë do t`ju jap një mori informacionesh për të pasuruar udhëtimet tuaja.</p>
     
@@ -291,7 +291,12 @@
         </div>
     
     <script>
-
+        /*per slide*/
+$(document).ready(function(){
+  $(".row3_h1").click(function(){
+    $(".row3_p").slideToggle("slow");
+  });
+});
         </script>
 </body>
 

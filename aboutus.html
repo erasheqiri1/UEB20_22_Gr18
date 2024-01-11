@@ -28,7 +28,7 @@
                     <img src="./038_Traveling__1_-removebg-preview.png" alt="foto1">
                 </div>
                 <div class="nav">
-                    <a href="./tavel.html">Home</a>
+                    <a href="./home.html">Home</a>
                     <a href="./aboutus.html">About us</a>
                     <a href="./tour.html">Tour Packages</a>
                     <a href="./contact.html">Contact us</a>
@@ -92,12 +92,12 @@
                     </h2>
                     <p>Ne jemi të përkushtuar për të ofruar përvoja të paharrueshme udhëtimi për klientët tanë. Misioni ynë është të...
                     </p>
-                    <ul>
+                    <ol>
                         <li> Ofrojmë shërbim të jashtëzakonshëm ndaj klientit </li>
                         <li> Eksploroni destinacione unike dhe emocionuese
                         </li>
                         <li> Krijoni kujtime të qëndrueshme për klientët tanë </li>
-                    </ul>
+                    </ol>
                 </section>
                 <section id="team">
                     <h2>
@@ -127,8 +127,8 @@
                 </section>
                 <section id="values">
                     <h2> Vlerat tona </h2>
-                    <p> Ne besojmë në... </p>
-                    <ul>
+                    <p class="list_value"> Ne besojmë në... </p>
+                    <ul id="ul_value">
                         <li> Integritet </li>
                         <li> Ekselencë </li>
                         <li> Aventurë </li>
@@ -215,7 +215,19 @@ $(document).ready(function(){
     $("p").show();
   });
 });
-
+/*per add*/
+$(document).ready(function(){
+  $(".list_value").click(function(){
+    $("#ul_value").append("<li>Kenaqesi</li>");
+  });
+});
+/*per remove*/
+$(document).ready(function(){
+  $("ol").click(function(){
+    $('ol li:last').remove();    
+  });
+});
+  
         </script>
 </body>
 
