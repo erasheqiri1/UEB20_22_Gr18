@@ -135,43 +135,6 @@
             audio.play();
         }
     
-    $(document).ready(function () {
-        // Hide and Show
-        $('#login').click(function () {
-            $('.login-form').toggle();
-        });
-
-        // Fade
-        $('#login').mouseenter(function () {
-            $('.login-form').fadeIn(500);
-        });
-
-        $('#login').mouseleave(function () {
-            $('.login-form').fadeOut(500);
-        });
-
-        // Slide
-        $('#login').click(function () {
-            $('.login-form').slideToggle(500);
-        });
-
-        // Animate
-        $('#login').click(function () {
-            $('.login-form').animate({ opacity: 'toggle', height: 'toggle' }, 500);
-        });
-
-
-
-
-        
-        // Callback
-        $('#button').click(function () {
-            playClickSound();
-            $('.main .content').slideUp(1000, function () {
-                alert('Form submitted successfully!');
-            });
-        });
-    });
 
     </script>
     
