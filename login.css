@@ -13,6 +13,10 @@
     align-items: center;
     margin: 100px 0;
 }
+.logo img{
+    width: 160px;
+    height: 160px;
+  }
 
 .main .content{
     width: 700px;
@@ -158,10 +162,7 @@ form #checkbox {
     justify-content: space-around;
     align-items: center;
 }
-.nav {
-    display: flex;
-    gap: 48px;
-}
+
 * {
     /*margin: 0;
     padding: 0;*/
@@ -201,14 +202,13 @@ body {
     text-decoration: none;
   }
 
-
-
 .navbar {
     padding: 0 4rem;
     background-color: #333;
 }
 
 .navbar-content {
+    height: 150px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -272,22 +272,9 @@ a.link:hover {
 
 
 
-@font-face {
-    font-family: "Open Sans";
-    src: url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap")
-      format("woff2");
-      font-weight: normal;
-      font-style: normal;
-}
-.nav a {
-    color: white;
-    font-family: "Open Sans", sans-serif;
-    font-size: 30px;
-    text-decoration: none;
-}
 
 .row6 {
-    height: 500px;
+    height: 540px;
     background-color: #333;
   }
   .row6__boxes {
@@ -331,4 +318,14 @@ a.link:hover {
     font-family: Open Sans;
     font-size: 16px;
     font-weight: 400;
+  }
+  .row6__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .row6__logo img{
+    width: 40px;
+    display: flex;
+  
   }
