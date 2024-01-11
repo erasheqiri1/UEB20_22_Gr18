@@ -218,6 +218,9 @@
   font-family: Open Sans;
   font-size: 50px;
 }
+.row3 a{
+  color: black;
+}
 .row3_part1_p {
   color: #333;
   font-family: Open Sans;
@@ -322,6 +325,10 @@ button:hover {
   justify-content: space-around;
   align-items: center;
 }
+mark{
+  background-color: orange;
+  color: black;
+}
 
 .row5_box {
   border: 10px double orange;
@@ -373,7 +380,7 @@ button:hover {
   font-size: 25px;
   font-weight: 100;
 }
-.row6_logos a {
+.row6_logo a {
   text-decoration: none;
   padding: 10px;
 }
