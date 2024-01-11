@@ -382,6 +382,9 @@ mark{
   flex-direction: column;
   margin-top: 25px;
 }
+.box12 a{
+  color: white;
+}
 .box12 h1 {
   color: var(--white, #fff);
   font-family: Open Sans;
