@@ -237,6 +237,9 @@ footer{
     font-size: 25px;
     font-weight: 100;
 }
+.box12 a{
+    color: white;
+}
 
 .row4_logos a {
     text-decoration: none;
