@@ -16,11 +16,7 @@
 	<script src="./script.js"></script>
 	 
 	 <!--Funksioni ne header-->
-	<script type="text/javascript">
-        function showAlert() {
-            alert("Pershendetje!");
-        }
-    </script>
+	
 </head>
 
 <body>
@@ -44,12 +40,7 @@
         <!--perfundon row1-->
         <!--fillon row2-->
         <section id="form">
-	    <!--Manipulimi me jQuery-->
-        <p class="myClass">Ky eshte paragrafi me klase.</p>
 
-        <button id="myButton">Me kliko mua</button>
-
-        <div id="myDiv" style="width:100px; height:100px; background-color:blue;">Div-i im</div>
             <div class="info">
                 <h1>Qendroni ne kontakt me ne</h1>
                 <p>Plotësoni formularin dhe ekipi ynë do të kthehet tek ju brenda 24 orëve.</p>
@@ -150,79 +141,10 @@
         </section>
         <!--perfundon-->
     </div>
-    	 <!--Funksionet ne jQuery-->
-	<script type="text/javascript">
-		// Selektimi i elementeve sipas tag name
-		$('p').css('color', 'red');
-
-		// Selektimi i elementeve sipas id
-		$('#myId').addClass('highlight');
-
-		// Selektimi i elementeve sipas klases
-		$('.myClass').hide();
-
-		// Eventi klik i butonit
-		$('#myButton').click(function() {
-			alert('Butoni u klikua!');
-		});
-
-		// Eventi hover
-		$('#myDiv').hover(
-			function() { $(this).addClass('hover'); },
-			function() { $(this).removeClass('hover'); }
-		);
-
-		// Eventi document ready
-		$(document).ready(function() {
-			console.log('Dokumenti gati!');
-		});
-		
-		// Pasivizo nje element
-		$('#myDiv').hide();
-
-		// Shfaq nje element
-		$('#myDiv').show();
-
-		
-		// Fade out
-		$('#myDiv').fadeOut();
-
-		// Fade in
-		$('#myDiv').fadeIn();
-
-		// Slide up
-		$('#myDiv').slideUp();
-
-		// Slide down
-		$('#myDiv').slideDown();
-
-		// Animacion 
-		$('#myDiv').animate({
-			left: '250px',
-			opacity: '0.5',
-			height: '150px',
-			width: '150px'
-		});
-
-		// Lexo vleren
-		var value = $('#myInput').val();
-
-		// Vendos vleren
-		$('#myInput').val('New Value');
-
-		// Vendosi elementit nje klase
-		$('#myDiv').addClass('newClass');
-
-		// Fshij elementit klasen
-		$('#myDiv').removeClass('existingClass');
-
-		// Bashko nje element
-		$('#myList').append('<li>New Item</li>');
-
-		// Fshij nje element
-		$('#myList li:last').remove();
+    <script>
 
     </script>
+
 </body>
 
 </html>
