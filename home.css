@@ -22,7 +22,10 @@
   display: flex;
   gap: 48px;
 }
-
+.logo img{
+  width: 120px;
+  height: 120px;
+}
 .header .right #login {
   padding: 8px 20px;
 
@@ -356,8 +359,18 @@ mark{
 }
 
 .row6 {
-  height: 500px;
+  height: 540px;
   background-color: #333;
+}
+.row6_logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row6_logo img{
+  width: 40px;
+  display: flex;
+
 }
 .row6__boxes {
   padding: 10px;
