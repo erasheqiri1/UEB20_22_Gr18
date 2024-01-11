@@ -105,7 +105,35 @@
 
 </div>
 <!--perfundon footer-->
+<script>
+     $(document).ready(function(){
+    // per call back alert
+    $("#button").click(function(){
+     
+      var email = $("input[name='email']").val();
+      
+      var password = $("input[name='password']").val();
 
+      var rememberMe = $("#check").is(":checked");
+
+      alert("Email: " + email + "\nPassword: " + password + "\nRemember Me: " + rememberMe);
+    });
+
+    // për toggle visibility të fjalëkalimit
+    $("#toggle-visibility-1").click(function(){
+      var passwordInput = $("#passwordInput1");
+      var icon = $(this);
+
+      if (passwordInput.attr("type") === "password") {
+        passwordInput.attr("type", "text");
+        icon.removeClass("fa-eye-slash").addClass("fa-eye");
+      } else {
+        passwordInput.attr("type", "password");
+        icon.removeClass("fa-eye").addClass("fa-eye-slash");
+      }
+    });
+  });
+</script>
 </body>
 
 </html>
