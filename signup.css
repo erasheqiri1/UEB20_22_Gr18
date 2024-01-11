@@ -317,11 +317,6 @@ body {
 
  
 
-/* .navbar .navbar-logo svg path {
-
-    fill: var(--accent);
-
-} */
 
  
 
@@ -397,29 +392,14 @@ a.link:hover {
 
  
 
-.navbar-content #burger-menu {
 
-    font-size: 24px;
 
-    transition: 300ms;
 
-    opacity: 0.5;
 
-    cursor: pointer;    
 
-    display: none;
 
-    color: var(--text-primary);
 
-}
 
- 
-
-.navbar-content #burger-menu:hover {
-
-    opacity: 1;
-
-}
 
  
 

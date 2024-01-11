@@ -17,21 +17,16 @@
     justify-content: space-around;
     align-items: center;
   }
+
   .nav {
     display: flex;
     gap: 48px;
   }
-  .navbar-logged .navbar-content .right .name {
-
-    display: none;
-
-    margin-top: 10px;
-
-}
+  
 
  
 
-.navbar-content .right #login {
+.header .right #login {
 
     padding: 8px 20px;
 
@@ -45,21 +40,13 @@
 
  
 
-.navbar-content .right #login:hover {
+.header .right #login:hover {
 
     background-color: var(--accent);
 
     color: #fff;
 
     border: 1px solid var(--accent);
-
-}
-
- 
-
-.navbar-logged .right {
-
-    cursor: pointer;
 
 }
 
@@ -419,3 +406,25 @@
     font-size: 16px;
     font-weight: 400;
   }
+
+
+  a.link {
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: 300ms;
+    font-size: 25px;
+  }
+  
+  a.link:hover {
+    color: var(--accent);
+  }
+  
+ 
+  :root {
+    --background: #222222;
+    --foreground: #333333;
+    --accent: orange;
+    --text-primary: #ffffff;
+    --text-secondary: #ffffff7f;
+    --border: #555555;
+}
