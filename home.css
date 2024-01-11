@@ -64,6 +64,31 @@
   font-weight: normal;
   font-style: normal;
 }
+
+img {
+  overflow: clip;
+}
+ #logo1 {
+	-webkit-animation: float 4s infinite;
+	animation: float 4s infinite;
+}
+
+
+/*
+Keyframe animations -----------------------------
+*/
+@-webkit-keyframes float {
+	0% {transform: translateY(0);}
+	50% {transform: translateY(-15px);}
+	100% {transform: translateY(0);}
+}
+
+@keyframes float {
+	0% {transform: translateY(0);}
+	50% {transform: translateY(-15px);}
+	100% {transform: translateY(0);}
+}
+
 .nav a {
   color: white;
   font-family: "Open Sans", sans-serif;
